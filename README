@@ -1,0 +1,64 @@
+Rhythmic Metronome
+
+A metronome that allows the entry of custom rhythms.
+
+
+This ad-free metronome allows the entry of custom rhythms to help
+musicians play in time when playing songs with complex rhythms.
+Rhythms can be made up of whole notes down to sixteenth notes
+(including dotted notes, triplets, and ties) and rests of similar duration.
+Time signatures can be specified to accentuate the clicks on the
+downbeat and slightly accentuate every second beat (or third beat in
+e.g., 6/8 time).
+
+The tempo can be entered with a keyboard, selected among a drop-down list
+of Italian tempo markings, or adjusted with buttons.
+
+The rhythm and tempo can be saved in the application's memory.
+The rhythm can also be copied to and pasted from the clipboard.
+Go to the import/export screen (accessed through the big "floppy disc"
+button icon) for this.
+
+This metronome is audio-only and does not provide "visual clicks".
+
+An advanced entry mode (reached by clicking on the "keyboard" icon on the
+keyboard) allows for the entry of notes, rests and time signatures of
+arbitrary duration.
+E.g.,: Enter "n1/32" for a thirty-second note, "r3/64" for a dotted
+thirty-second note, "n1/7" for a septuplet (seven notes in the time of
+one); "r1/64" for a sixty-fourth rest;
+"t7/4" for a 7-over-4 time signature.
+It is also possible to group notes with parenthesis.
+Individual notes and rests and groups can be played multiple times by
+appending an asterisk and a number.
+E.g.,: "(n1/2n1/4*2)*3" would play three times:
+half-note, quater-note, quater-note.
+ 
+Copyright 2014, Robert R. Enderlein.
+
+----
+Known bugs:
+
+The rhythm entry field does not allow moving the cursor by tapping,
+making selections, or copy/pasting. Use the arrow keys on the keyboard to
+move. Use the import/export screen (accessed 
+through the big "floppy disc" button icon) to copy or paste.
+
+If the application sleeps for too long, the rhythm entry might be replaced
+by "x". I suggest you save your rhythms often, and reload them if that
+happens.
+
+----
+Attributions:
+
+The metronome click soundtrack is from soundbible.com "Metronome",
+recorded by Mike Koenig, license: Creative commons attribution 3.0.
+
+The musical note images where generated with Lilypond (www.lilypond.org).
+
+Some of the code was based on Periklis Ntanasis's BeatKeeper
+(https://github.com/MasterEx/BeatKeeper). License: UNLICENSE.
+
+The Italian tempo markings where taken from Wikipedia
+(http://en.wikipedia.org/wiki/Tempo#Italian_tempo_markings)
+under an Creative Commons Attribution-ShareAlike License.

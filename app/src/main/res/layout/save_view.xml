@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/saveFilenameSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/saveFilenameEntry"
+        android:hint="Enter custom filename"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:orientation="horizontal" />
+    <LinearLayout
+        android:id="@+id/linearLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/dosave"
+            android:layout_width="0px"
+            android:layout_weight=".60"
+            android:layout_height="wrap_content"
+            android:onClick="onSaveClick"
+            android:text="Save"
+            android:textSize="40dp" />
+        <Button
+            android:id="@+id/docancel"
+            android:layout_width="0px"
+            android:layout_weight=".40"
+            android:layout_height="fill_parent"
+            android:onClick="onCancelClick"
+            android:text="Cancel"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight=".30"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="bla"
+        android:id="@+id/toSaveText" />
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/doload"
+            android:layout_width="0px"
+            android:layout_weight=".60"
+            android:layout_height="wrap_content"
+            android:onClick="onLoadClick"
+            android:text="Load"
+            android:textSize="40dp" />
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight=".10"
+            android:orientation="horizontal" />
+        <Button
+            android:id="@+id/dodelete"
+            android:layout_width="0px"
+            android:layout_weight=".30"
+            android:layout_height="fill_parent"
+            android:onClick="onDeleteClick"
+            android:text="Delete"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight=".70"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Load preview"
+        android:id="@+id/previewText" />
+</LinearLayout>

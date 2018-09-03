@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/startstop"
+        android:layout_width="0px"
+        android:layout_weight=".85"
+        android:layout_height="wrap_content"
+        android:onClick="onStartStopClick"
+        android:text="@string/start"
+        android:textSize="80dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout00"
+            android:layout_width="0px"
+            android:layout_weight=".15"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight=".5"
+                android:onClick="onMainSaveClick"
+                android:src="@drawable/save"
+               />
+        </LinearLayout>
+     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/bpsText"
+            android:layout_weight=".20"
+            android:hint="bps" />
+        <Spinner
+            android:id="@+id/bpsSpinner"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50" />
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:onClick="onMinusClick"
+            android:text="@string/minus"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:onClick="onPlusClick"
+            android:text="@string/plus"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/rhythmEntry"
+        android:hint="Enter rhythm"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:inputType="text|textMultiLine" />
+
+
+</LinearLayout>
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyboardview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="gone" />
+
+</RelativeLayout>
