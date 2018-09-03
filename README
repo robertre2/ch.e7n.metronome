@@ -34,7 +34,8 @@ appending an asterisk and a number.
 E.g.,: "(n1/2n1/4*2)*3" would play three times:
 half-note, quater-note, quater-note.
  
-Copyright 2014, Robert R. Enderlein.
+Copyright 2014, IBM Corp.
+Copyright 2018, Robert R. Enderlein.
 
 ----
 Known bugs:
